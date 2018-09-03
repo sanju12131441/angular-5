@@ -1,0 +1,129 @@
+<div id="wrapper" class="toggled">
+<nav class="sidebar toggled" id="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+    <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
+        <i class="fa fa-fw fa-angle-double-left"></i>&nbsp;
+        <span>{{ 'Collapse Sidebar' }}</span>
+    </div>
+    <div class="header-fields">  
+  <div class="nested-menu">
+        <div *ngIf="sa">
+         <input class="form-control " type="search" placeholder="SERVICE REQUEST " style="font-family: 'Roboto Condensed', sans-serif;border-radius:0px;margin-top: 5px;margin-bottom: 5px" aria-label="Search">
+                <input class="form-control no-rounded-corners"type="search" placeholder="ACTIVITY ID" style="font-family: 'Roboto Condensed', sans-serif;border-radius:0px;margin-bottom: 5px" aria-label="Search">
+                <a style="text-decoration: none" (click)="addExpandClass('s')">                  
+                        <div class="input-group">
+                                <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-angle-down"></i></span>
+                          </div>                        
+                        </div>         
+                 </a>
+                 <li class="nested" [class.expand]="showMenu === 's'">
+                     <ul class="sumenu" >
+                         <li style="width: 80px;margin-bottom: 0px">
+                            <a> <textarea placeholder="paste here" cols="40"></textarea>  </a>
+                         </li>
+                     </ul>
+                 </li>
+                 </div>
+                      <button class="btn btn-primary btn-lg" (click)="show()" type="submit" style="border-radius: 0px;width: 100%;margin-bottom: 5px"><i class="fa fa-search"></i> &nbsp; Search</button>
+        <a class="list-group-item" (click)="addExpandClass('profile')">
+                <span><i class="fa fa-user"></i>&nbsp; User&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="padding-left:60px"class="fa fa-angle-down"></i></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'profile'">
+                <ul class="submenu">
+                    <li>
+                        <a>
+                            <span><i class="fa fa-fw fa-user"></i> {{ 'Profile' }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a >
+                            <span><i class="fa fa-fw fa-bell"></i> {{ 'Notifications' }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a >
+                            <span><i class="fa fa-fw fa-power-off"></i> {{ 'Log Out' }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </div> 
+    <div class="list-group">
+        <a class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;        
+            <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()" style="margin-left:0px !important">
+                    <i class="fa fa-fw fa-angle-double-left toggle" style="float: right;padding-right: 60px"></i>&nbsp;
+                    <span>  </span>
+                </div>
+        </a>
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Dashboard' }}</span>
+        </a>     
+    </div>  
+</nav>
+
+</div>

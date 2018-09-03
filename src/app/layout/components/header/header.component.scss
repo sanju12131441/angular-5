@@ -1,0 +1,94 @@
+$topnav-background-color: white;
+:host {
+    .navbar {
+        background-color: $topnav-background-color;
+        border-bottom: 1px solid rgb(180, 180, 180);
+        .navbar-brand {
+            color: #343B4A
+        }
+        .nav-item > a {
+            color: #999;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    .messages {
+        width: 300px;
+        .media {
+            border-bottom: 1px solid #ddd;
+            padding: 5px 10px;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .media-body {
+            h5 {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .small {
+                margin: 0;
+            }
+            .last {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+.rounded-corners-left{
+    border-radius: 15px 0px 0px 15px;
+    background: #F3F6F8;
+}
+.no-rounded-corners{
+    border-radius: 0px 0px 0px 0px;
+    background: #F3F6F8; 
+}
+.oneside-rounded-button{
+    border-radius:0px 15px 15px 0px;   
+}
+.rounded-button{
+    border-radius:15px 15px 15px 15px;
+    background: #F3F6F8; 
+    width:70px
+}
+.black{
+    color:blue
+}
+.caret{caret-color:black}
+.navbar-nav{
+    padding-right:20px;
+    padding-left:10px
+}
+.mr-auto{
+    padding-right:20px  
+}
+.nav-item{
+    padding-right:20px  
+}
+@media only screen and (max-width: 600px) {
+    div >.s{
+      min-width: 200px
+    }
+    .rounded-corners-left{
+        border-radius:0px;
+        margin-bottom: 5px;
+        margin-top:5px;
+    }
+    .no-rounded-corners{
+        border-radius: 0px 0px 0px 0px;
+        background: #F3F6F8; 
+        min-width: 200px;
+    }
+    .input{
+        width: 2600px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 0px;
+background: #F3F6F8; 
+    }
+ }

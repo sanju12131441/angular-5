@@ -1,0 +1,54 @@
+
+.white{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+// .page-title{
+//     padding: 10px;
+//     margin-left:20px;
+//     margin-right: auto;
+//     background: white;
+//     height: 50px;
+//     width:82.76%;
+// }
+
+.gap{
+    padding: 12px;
+    margin-top: 80px;
+}
+.panel-title {
+    position: fixed;
+  }
+    
+  .panel-title::after {
+      content: "\f107";
+      color: #333;
+      top: -2px;
+      right: 0px;
+      position: absolute;
+      font-family: "FontAwesome"
+
+  }
+  
+  .panel-title[aria-expanded="true"]::after {
+      content: "\f106";
+  }
+
+
+  .panel-title {
+    position: relative;
+  }
+    
+  .panel-title::after {
+      content: "\f107";
+      color: #333;
+      top: -2px;
+      right: 0px;
+      position: absolute;
+      font-family: "FontAwesome"
+  }
+  
+  .panel-title[aria-expanded="true"]::after {
+      content: "\f106";
+  }
